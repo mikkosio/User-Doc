@@ -1,1 +1,5 @@
 site_name: My Docs
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

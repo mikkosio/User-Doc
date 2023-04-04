@@ -3,7 +3,8 @@ site_name: PyCharm IDE Documentation
 nav:
   - Home: "index.md"
   - Creating Your First Project: "pages/first-project.md"
-  - Debugging: "pages/debugging.md"
+  - Debugging Your Code: "pages/debugging.md"
+  - Creating a Github Repository: "pages/creating-repo.md"
   - Glossary: "pages/glossary.md"
 
 theme:

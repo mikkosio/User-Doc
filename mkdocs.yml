@@ -1,7 +1,7 @@
 site_name: PyCharm IDE Documentation
 
 nav:
-  - Home: "introduction.md"
+  - Home: "index.md"
   - Getting Started: "pages/first-project.md"
   - Debugging: "pages/debugging.md"
 

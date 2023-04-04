@@ -1,11 +1,14 @@
-site_name: My Docs
+site_name: PyCharm IDE Documentation
+
+nav:
+  - Home: "introduction.md"
+  - Getting Started: "pages/first-project.md"
+
 theme:
   name: material
 
-  icon:
-    repo: fontawesome/brands/git-alt
-  
-  favicon: assets/favicon.png
+  features:
+  - toc.integrate 
 
   font:
     text: Roboto
@@ -24,6 +27,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  
+  icon:
+    logo: logo
 
 markdown_extensions:
   - admonition

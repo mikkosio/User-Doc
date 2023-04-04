@@ -3,6 +3,7 @@ site_name: PyCharm IDE Documentation
 nav:
   - Home: "introduction.md"
   - Getting Started: "pages/first-project.md"
+  - Debugging: "pages/debugging.md"
 
 theme:
   name: material

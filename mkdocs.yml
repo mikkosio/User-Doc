@@ -1,5 +1,8 @@
 site_name: PyCharm IDE Documentation
 
+repo_name: mikkosio/User-Doc
+repo_url: https://github.com/mikkosio/User-Doc
+
 nav:
   - Home: "index.md"
   - Creating Your First Project: "pages/first-project.md"

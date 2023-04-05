@@ -10,9 +10,7 @@ To start debug process you have to setup the debugger first by placing a breakpo
 ![Breakpoint](/images/debug-photo/Breakpoint.png)
 
 2. Click the debug icon located in the top right corner.
-![Debug Icon](/images/debug-photo/debugicon.png)
-!!! You should
-    Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
+![Debug Icon](/images/debug-photo/debugicon.png) Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
 
 ## Interacting With Debugger
 

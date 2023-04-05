@@ -7,7 +7,8 @@ nav:
   - Home: "index.md"
   - Creating Your First Project: "pages/first-project.md"
   - Debugging Your Code: "pages/debugging.md"
-  - Creating a Github Repository: "pages/creating-repo.md"
+  - Creating a GitHub Repository: "pages/creating-repo.md"
+  - Troubleshooting: "pages/troubleshooting.md"
   - Glossary: "pages/glossary.md"
 
 theme:

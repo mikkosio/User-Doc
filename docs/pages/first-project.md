@@ -75,7 +75,7 @@ Now, you will learn how to change your settings according to your preferences in
 
 ## Conclusion
 
-Congratulations :partying_face:, you have now learned the basics of PyCharm, and you can now start your Python programming journey!
+Congratulations 🎉, you have now learned the basics of PyCharm, and you can now start your Python programming journey!
 
 Lessons learned:
 
@@ -83,4 +83,4 @@ Lessons learned:
 - [x] How to write and run code.
 - [x] How to edit your preference settings.
 
-You can now move on to the next step by clicking on the 'Next' button below me.
+You can now move on to the next step by clicking on the 'Next' button below me. :partying_face:

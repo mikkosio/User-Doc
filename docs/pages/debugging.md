@@ -38,7 +38,8 @@ The stop button stops the execution and returns an error.
 
 6. Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.
 Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end. 
-![Done](/images/debug-photo/done.png)
+!!! success
+    ![Done](/images/debug-photo/done.png)
 
 ## Conclusion
 

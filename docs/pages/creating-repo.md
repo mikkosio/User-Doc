@@ -71,5 +71,14 @@ Now that you have created a repository for your project, the only thing left to 
 
 ## Conclusion
 
-- [x] this is a complete item
-- [ ] this is an incomplete item
+Congratulations🎉, you have successfully learned how to connect your PyCharm project to you GitHub. You can now start coding with others.
+
+Lessons learned:
+
+- [x] How to add your GitHub account to PyCharm.
+- [x] How to create a repository.
+- [x] How to connect your project to GitHub.
+- [x] Basics of git controls.
+
+You have successfully completed all tasks. :partying_face:  
+If you have any problems, you can check out the :material-wrench:Troubleshooting page by clicking 'Next' button below me.

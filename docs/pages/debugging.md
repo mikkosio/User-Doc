@@ -10,14 +10,14 @@ To start debug process you have to setup the debugger first by placing a breakpo
 ![Breakpoint](/images/debug-photo/Breakpoint.png)
 
 2. Click the debug icon located in the top right corner.
-![Debug Icon](/images/debug-photo/debugicon.png) Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
+![Debug Icon](/images/debug-photo/debugicon.png)Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
 
 ## Interacting With Debugger
 
 Once the debug console opens up you will be able to start to debug your code. There will be different tasks you can perform with the debug console.
 
 1. Click the step into icon which is the downward-facing arrow pointing to a line.
-![Step Into Icon](/images/debug-photo/stepinto.png)
+![Step Into Icon](/images/debug-photo/stepInto.png)
 This allows you to go line by line in your debug console.
 
 2. Click on the step into my code icon beside the step into icon.
@@ -51,3 +51,9 @@ Lessons learned:
 - [x] How to interact with the debugger.
 
 You can now move on to the next step by clicking on the 'Next' button below me. :partying_face:
+
+
+Notes
+add block of sample code before explain
+bigger images
+add info for short cuts

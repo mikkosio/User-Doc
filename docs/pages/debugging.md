@@ -1,10 +1,10 @@
-# Overview
+## Overview
 
 This part will go over how to use the debugger in PyCharm IDE. Debugging allows the user to be able to go through their code step by step. This allows users to understand how their code may work. The built-in debugger in PyCharm can also be used for fixing and catching errors. We will go step by step and help you debug your first code.  
 
 ## Initiate Debug
 
-To start the debugging process you have to set up the debugger first by placing a breakpoint. 
+To start debug process you have to setup the debugger first by placing a breakpoint. 
 
 1. Click in between the line numbers and the code divider.
 ![Breakpoint](/images/debug-photo/Breakpoint.png)
@@ -38,7 +38,7 @@ You will step out of the current method to the caller function.
 ![Stop](/images/debug-photo/stop.png)
 The stop button stops the execution and returns an error.
 
-6. Repeat step 2 in Initiate Debug and repeat step 1 in Interacting With Debugger till the debugger closes.
+6. Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.
 Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end. 
 ![Done](/images/debug-photo/done.png)
 
@@ -50,6 +50,5 @@ Lessons learned:
 
 - [x] How to initiate debug.
 - [x] How to interact with the debugger.
-
 
 You can now move on to the next step by clicking on the 'Next' button below me. :partying_face:

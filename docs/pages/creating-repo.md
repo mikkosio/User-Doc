@@ -81,4 +81,4 @@ Lessons learned:
 - [x] Basics of git controls.
 
 You have successfully completed all tasks. :partying_face:  
-If you have any problems, you can check out the :material-wrench:Troubleshooting page by clicking 'Next' button below me.
+If you have any problems, you can check out the :material-wrench:Troubleshooting page by clicking on the 'Next' button below me.

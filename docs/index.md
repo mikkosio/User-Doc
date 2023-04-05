@@ -48,4 +48,4 @@ In this documentation, you will encounter messages that contain information to h
 !!! success
     Lets readers know what they have completed.
 
-You can now move on to the first section of this documentation by click on the 'Next' button below me. Good Luck :thumbsup:.  
+You can now move on to the first section of this documentation by clicking on the 'Next' button below me. Good Luck :thumbsup:.  

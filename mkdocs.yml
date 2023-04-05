@@ -16,6 +16,7 @@ theme:
   features:
     - toc.integrate 
     - navigation.footer
+    - content.code.copy
 
   font:
     text: Roboto
@@ -71,6 +72,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
 
 
 

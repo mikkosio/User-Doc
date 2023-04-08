@@ -34,35 +34,37 @@ if __name__ == "__main__":
 To start debug process you have to setup the debugger first by placing a breakpoint.
 
 1. Click in between the line numbers and the code divider.
-![Breakpoint](../images/debug-photo/Breakpoint.png)
+![Breakpoint](../images/debug-photo/Breakpoint.png)  
 
 2. Click the debug icon located in the top right corner.
-![Debug Icon](../images/debug-photo/debugIcon.png)Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
+![Debug Icon](../images/debug-photo/debugIcon.png)  
+Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!
 
 ## Interacting With Debugger
 
 Once the debug console opens up you will be able to start to debug your code. There will be different tasks you can perform with the debug console.
 
 1. Click the step into icon which is the downward-facing arrow pointing to a line.
-![Step Into Icon](../images/debug-photo/stepInto.png)
+![Step Into Icon](../images/debug-photo/stepInto.png)  
 This allows you to go line by line in your debug console.
 
 2. Click on the step into my code icon beside the step into icon.
-![Step Into My Code Icon](../images/debug-photo/stepIntoMyCode.png)
+![Step Into My Code Icon](../images/debug-photo/stepIntoMyCode.png)  
 The difference between step 1 and step 2 is that step 2 only steps into your code and not any library classes.
 
 3. Click on the step over icon on the left side of the step into icon.
-![Step Over](../images/debug-photo/stepOver.png)
+![Step Over](../images/debug-photo/stepOver.png)  
 Step over is used if you do not want to run the current line so you step over this line to the next.
 
 4. Click the step out button in the debug console.
-![Step Out](../images/debug-photo/stepOut.png)
+![Step Out](../images/debug-photo/stepOut.png)  
 You will step out of the current method to the caller function.
 
 5. Click on the red stop button located on the left side of the debug console.
-![Stop](../images/debug-photo/stop.png)
-The stop button stops the execution and returns an error.
-!!! info
+![Stop](../images/debug-photo/stop.png)  
+    The stop button stops the execution and returns an error.
+
+    !!! info
         Alternatively, you can click on the stop icon located in the top right corner near the debug icon.
 
 6. Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.

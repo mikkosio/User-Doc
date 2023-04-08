@@ -409,17 +409,42 @@
   <h1>Debugging Your Code</h1>
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This part will go over how to use the debugger in PyCharm IDE. Debugging allows the user to be able to go through their code step by step. This allows users to understand how their code may work. The built-in debugger in PyCharm can also be used for fixing and catching errors. We will go step by step and help you debug your first code.  </p>
+<p>This part will go over how to use the debugger in PyCharm IDE. Debugging allows the user to be able to go through their code step by step. This allows users to understand how their code may work. The built-in debugger in PyCharm can also be used for fixing and catching errors. We will go step by step and help you debug your first code. There is some code to help you get started debugging.</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">romannumeral</span><span class="p">(</span><span class="n">positive_int</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">roman</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1000</span><span class="p">:</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="mi">500</span><span class="p">:</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">:</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span> <span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span><span class="p">}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">roman_num</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">while</span> <span class="n">positive_int</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">roman</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>            <span class="k">if</span> <span class="n">positive_int</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                <span class="k">return</span> <span class="n">roman_num</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            <span class="k">elif</span> <span class="n">positive_int</span> <span class="o">==</span> <span class="n">key</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                <span class="n">roman_num</span> <span class="o">=</span> <span class="n">roman_num</span> <span class="o">+</span> <span class="n">roman</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">roman</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                <span class="n">positive_int</span> <span class="o">-=</span> <span class="n">key</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="k">elif</span> <span class="n">positive_int</span> <span class="o">-</span> <span class="n">key</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                <span class="n">positive_int</span> <span class="o">=</span> <span class="n">positive_int</span> <span class="o">-</span> <span class="n">key</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                <span class="n">roman_num</span> <span class="o">=</span> <span class="n">roman_num</span> <span class="o">+</span> <span class="n">roman</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                <span class="k">break</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">romannumeral</span><span class="p">(</span><span class="mi">39</span><span class="p">))</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div>
 <h2 id="initiate-debug">Initiate Debug<a class="headerlink" href="#initiate-debug" title="Permanent link">&para;</a></h2>
 <p>To start debug process you have to setup the debugger first by placing a breakpoint.</p>
 <ol>
 <li>
 <p>Click in between the line numbers and the code divider.
-<img alt="Breakpoint" src="../images/debug-photo/Breakpoint.png" /></p>
+<img alt="Breakpoint" src="/images/debug-photo/Breakpoint.png" /></p>
 </li>
 <li>
 <p>Click the debug icon located in the top right corner.
-<img alt="Debug Icon" src="../images/debug-photo/debugIcon.png" />Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!</p>
+<img alt="Debug Icon" src="/images/debug-photo/debugIcon.png" />Once you go through the steps you should have a debug console open in the bottom half of the screen. Now you can start to debug!</p>
 </li>
 </ol>
 <h2 id="interacting-with-debugger">Interacting With Debugger<a class="headerlink" href="#interacting-with-debugger" title="Permanent link">&para;</a></h2>
@@ -427,37 +452,41 @@
 <ol>
 <li>
 <p>Click the step into icon which is the downward-facing arrow pointing to a line.
-<img alt="Step Into Icon" src="../images/debug-photo/stepInto.png" />
+<img alt="Step Into Icon" src="/images/debug-photo/stepInto.png" />
 This allows you to go line by line in your debug console.</p>
 </li>
 <li>
 <p>Click on the step into my code icon beside the step into icon.
-<img alt="Step Into My Code Icon" src="../images/debug-photo/stepIntoMyCode.png" />
+<img alt="Step Into My Code Icon" src="/images/debug-photo/stepIntoMyCode.png" />
 The difference between step 1 and step 2 is that step 2 only steps into your code and not any library classes.</p>
 </li>
 <li>
 <p>Click on the step over icon on the left side of the step into icon.
-<img alt="Step Over" src="../images/debug-photo/stepOver.png" />
+<img alt="Step Over" src="/images/debug-photo/stepOver.png" />
 Step over is used if you do not want to run the current line so you step over this line to the next.</p>
 </li>
 <li>
 <p>Click the step out button in the debug console.
-<img alt="Step Out" src="../images/debug-photo/stepOut.png" />
+<img alt="Step Out" src="/images/debug-photo/stepOut.png" />
 You will step out of the current method to the caller function.</p>
 </li>
 <li>
 <p>Click on the red stop button located on the left side of the debug console.
-<img alt="Stop" src="../images/debug-photo/stop.png" />
+<img alt="Stop" src="/images/debug-photo/stop.png" />
 The stop button stops the execution and returns an error.</p>
 </li>
-<li>
-<p>Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.
-Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end.</p>
-</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info<p>Alternatively, you can click on the stop icon located in the top right corner near the debug icon.</p>
+</p>
+</div>
+<ol>
+<li>Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.
+Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end.</li>
 </ol>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p><img alt="Done" src="../images/debug-photo/done.png" /></p>
+<p>Once the debug process has complete the code will execute in the console.</p>
 </div>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
 <p>Congratulations 🎉, now you should be able to go through and debug your code and understand what different debug icons do.!</p>
@@ -467,10 +496,6 @@ Once the debugging session ends the debugging will close and take you to the con
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> How to interact with the debugger.</li>
 </ul>
 <p>You can now move on to the next step by clicking on the 'Next' button below me. <img alt="🥳" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f973.svg" title=":partying_face:" /></p>
-<p>Notes
-add block of sample code before explain
-bigger images
-add info for short cuts</p>
 
 
 

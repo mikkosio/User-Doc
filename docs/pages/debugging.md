@@ -3,7 +3,7 @@
 This part will go over how to use the debugger in PyCharm IDE. Debugging allows the user to be able to go through their code step by step. This allows users to understand how their code may work. The built-in debugger in PyCharm can also be used for fixing and catching errors. We will go step by step and help you debug your first code. There is some code to help you get started debugging.
 
 ``` py
-    def romannumeral(positive_int):
+def romannumeral(positive_int):
     roman = {1000: 'M', 500: 'D', 100: 'C', 50: "L", 10: "X", 5: "V", 1: "I"}
     roman_num = ''
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
 ## Initiate Debug
 
-To start debug process you have to setup the debugger first by placing a breakpoint. 
+To start debug process you have to setup the debugger first by placing a breakpoint.
 
 1. Click in between the line numbers and the code divider.
 ![Breakpoint](/images/debug-photo/Breakpoint.png)
@@ -66,7 +66,7 @@ The stop button stops the execution and returns an error.
         Alternatively, you can click on the stop icon located in the top right corner near the debug icon.
 
 6. Repeat step 2 in Initiate Debug and repeat step 1 Interacting With Debugger till the debugger closes.
-Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end. 
+Once the debugging session ends the debugging will close and take you to the console. In the console the program will execute and display the finial information at the end.
 !!! success
     Once the debug process has complete the code will execute in the console.
 

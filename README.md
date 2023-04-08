@@ -30,9 +30,9 @@ We also designed our documentation with the help of [**MkDocs**](https://squidfu
 
 By using the admonitions feature MkDocs has provided us, we were able to help improve the experience of our readers.
 
-![Success](docs../images/readme/success.png)
+![Success](docs/pages/images/readme/success.png)
 
-![Info](docs../images/readme/info.png)
+![Info](docs/pages/images/readme/info.png)
 
 ## Conclusion
 

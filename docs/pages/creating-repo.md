@@ -20,7 +20,7 @@ The first thing you need to do is to connect your GitHub account to PyCharm. Thi
 ![Settings](/images/first-project/settings.png)  
 
 3. Click on 'GitHub' in the 'Version Control' dropdown.  
-![GitHub Settings](/images/creating-repo/gitHub-settings.png)
+![GitHub Settings](/images/creating-repo/github-settings.png)
 
 4. Click on the plus button at the top left of the menu and login to your GitHub account.
 ![Add account](/images/creating-repo/add-account.png)
